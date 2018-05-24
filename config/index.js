@@ -15,7 +15,7 @@ module.exports = {
     // 列如将localhost:8080/api/xxx 代理到 node.itcnyz.com
     proxyTable: { // 反向代理
       '/api': {
-        targer: 'http://node.itcnyz.com', // 访问地址
+        targer: 'http://blogapi.lostinyou.cn/front', // 访问地址
         // secure: false,   //如果https接口，需要配置这个参数
         changeOrigin: true,  // 如果接口跨域，需要进行这个参数配置
         pathRewrite: {   // 原本的接口是没有api前缀的，所以需要通过 pathRewrite 来重写地址

@@ -4,7 +4,7 @@
       <br><br>
       密码：  <input type="password">
       <br><br>
-      <input type="button" value="登陆">
+      <input type="button" value="登陆" @click="ajax()">
   </div>
 </template>
 
@@ -18,14 +18,18 @@
             }
         },
         methods:{
-          axios.post('/login',{
-            uname:'',
-            upwd:''
-          },then((res)=>{
-            console.log(1)
-          },catch((res)=>{
-            console.log(1)
-          }))
+          ajax:() => {
+            axios.get('http://blogapi.lostinyou.cn/front/api/article', {
+              // firstName: 'Fred',
+              // lastName: 'Flintstone'
+            })
+            .then(function (response) {
+              console.log(response);
+            })
+            .catch(function (error) {
+              console.log(error);
+            });
+          }
         }
     }
 </script>
