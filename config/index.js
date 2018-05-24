@@ -14,12 +14,12 @@ module.exports = {
     //代理配置表，在这里可以配置特定得请求代理到对应得API接口
     // 列如将localhost:8080/api/xxx 代理到 node.itcnyz.com
     proxyTable: { // 反向代理
-      '/api': {
-        targer: 'http://blogapi.lostinyou.cn/front', // 访问地址
+      '/pro': {
+        target: 'http://node.itcnyz.com:8888/', // 访问地址
         // secure: false,   //如果https接口，需要配置这个参数
         changeOrigin: true,  // 如果接口跨域，需要进行这个参数配置
         pathRewrite: {   // 原本的接口是没有api前缀的，所以需要通过 pathRewrite 来重写地址
-          '^api':''
+          '^/pro':''
         }
         //接口地址原本是 /save/index，但是为了匹配代理地址，在前面加一个 /api,  因此接口地址需要写成这样的即可生效 /api/save/index。
         // 注意： '/api' 为匹配项，target 为被请求的地址，因为在 ajax 的 url 中加了前缀 '/api'，而原本的接口是没有这个前缀的，所以需要通过 pathRewrite 来重写地址，将前缀 '/api' 转为 '/'。如果本身的接口地址就有 '/api' 这种通用前缀，就可以把 pathRewrite 删掉。

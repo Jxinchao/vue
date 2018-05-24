@@ -19,7 +19,7 @@
         },
         methods:{
           ajax:() => {
-            axios.get('http://blogapi.lostinyou.cn/front/api/article', {
+            axios.get('/pro/login', {
               // firstName: 'Fred',
               // lastName: 'Flintstone'
             })
