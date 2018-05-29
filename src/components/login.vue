@@ -1,10 +1,10 @@
 <template>
   <div class="login">
-      用户名：<input type="text">
+      用户名：<input type="text" v-model="loginform.name">
       <br><br>
-      密码：  <input type="password">
+      密码：  <input type="password" v-model="loginform.pwd">
       <br><br>
-      <input type="button" value="登陆" @click="ajax()">
+      <input type="button" value="登陆" @click="ajaxssss()">
   </div>
 </template>
 
@@ -14,14 +14,17 @@
         name: '',
         data () {
             return {
-                msg: ''
+                loginform: {
+                  name:'',
+                  pwd:''
+                }
             }
         },
         methods:{
-          ajax:() => {
-            axios.get('/pro/login', {
-              // firstName: 'Fred',
-              // lastName: 'Flintstone'
+          ajaxssss:function(){
+            axios.get('/apis/lists/list', {
+              // username: this.loginform.name,
+              // password: this.loginform.pwd
             })
             .then(function (response) {
               console.log(response);
