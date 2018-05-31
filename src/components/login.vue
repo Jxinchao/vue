@@ -22,9 +22,9 @@
         },
         methods:{
           ajaxssss:function(){
-            axios.get('/apis/lists/list', {
-              // username: this.loginform.name,
-              // password: this.loginform.pwd
+            axios.post('/apis/login/login', {
+              username: this.loginform.name,
+              password: this.loginform.pwd
             })
             .then(function (response) {
               console.log(response);
