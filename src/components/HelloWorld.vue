@@ -3,6 +3,17 @@
     {{ $route.params.id }}
       <router-link to="/login">登录</router-link>
       <router-link to="/register">注册</router-link>
+      <router-link to="/shoping">购物车</router-link>
+      <router-link to="/lifecycle">生命周期</router-link>
+      <router-link to="/tab">选项卡</router-link>
+      <router-link to="/banner">轮播图</router-link>
+      <router-link to="/floorRolling">楼层滚动</router-link>
+      <router-link to="/documentHide">外部可关闭下拉菜单</router-link>
+      <router-link to="/realtime">实时时间转换指令</router-link>
+      <router-link to="/questionnaire">调查问卷</router-link>
+      <router-link to="/number">数字输入框</router-link>
+      <router-link to="/sort">排序表格组件</router-link>
+
       <p>这里是vueX状态的值 {{ count }}</p>
       <button @click="adds">+1</button>
       <button @click="removes">-1</button>
@@ -48,5 +59,6 @@ li {
 }
 a {
   color: #42b983;
+  margin-left: 20px;
 }
 </style>
