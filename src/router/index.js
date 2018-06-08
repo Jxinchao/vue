@@ -10,6 +10,7 @@ import floorRolling from '@/components/floorRolling'
 import documentHide from '@/components/documentHide'
 import questionnaire from '@/components/questionnaire'
 import number from '@/components/number'
+import damoTime from '@/components/damoTime'
 Vue.use(Router)
 
 export default new Router({
@@ -63,6 +64,11 @@ export default new Router({
       path: '/number',
       name: 'number',
       component: number
+    },
+    {
+      path: '/damoTime',
+      name: 'damoTime',
+      component: damoTime
     }
   ]
 })

@@ -13,6 +13,7 @@
       <router-link to="/questionnaire">调查问卷</router-link>
       <router-link to="/number">数字输入框</router-link>
       <router-link to="/sort">排序表格组件</router-link>
+      <router-link to="/damoTime">大漠的日期</router-link>
 
       <p>这里是vueX状态的值 {{ count }}</p>
       <button @click="adds">+1</button>
