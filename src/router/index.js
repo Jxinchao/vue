@@ -11,6 +11,7 @@ import documentHide from '@/components/documentHide'
 import questionnaire from '@/components/questionnaire'
 import number from '@/components/number'
 import damoTime from '@/components/damoTime'
+
 Vue.use(Router)
 
 export default new Router({

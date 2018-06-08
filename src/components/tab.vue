@@ -50,7 +50,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	li{
 		float: left;
 		margin-left: 30px;
