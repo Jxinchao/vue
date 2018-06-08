@@ -4,6 +4,7 @@
 
 		<div v-time="timeNow"></div>
 		<div v-time="timeBefore"></div>
+		<div v-time="timeout"></div>
 	</div>
 </template>
 
@@ -17,12 +18,14 @@
 *     大于1个月，显示XX年XX月XX日
 *			为了使判断逻辑更简单，统一使用时间戳进行大小判断
 */
+import time from '@/router/time'
 export default{
 	name:"realtime",
 	data(){
 		return {
 			timeNow:(new Date()).getTime(),  // 获取当前得时间
-			timeBefore: 1488930695721   // 写死得时间 2017-03-08
+			timeBefore: 1488930695721,   // 写死得时间 2017-03-08
+			timeout:(new Date()).getTime() - (86400*3)
 		}
 	}
 }

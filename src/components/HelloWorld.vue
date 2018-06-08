@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+  <!-- to="/home"    :to="{name:home}"   前者找的是path  后者找的是name  想要使用name 在路径里面添加name  -->
     {{ $route.params.id }}
       <router-link to="/login">登录</router-link>
       <router-link to="/register">注册</router-link>

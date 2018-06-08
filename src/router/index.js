@@ -7,10 +7,12 @@ import shoping from '@/components/shoping'
 import tab from '@/components/tab'
 import banner from '@/components/banner'
 import floorRolling from '@/components/floorRolling'
+import realtime from '@/components/realtime'
 import documentHide from '@/components/documentHide'
 import questionnaire from '@/components/questionnaire'
 import number from '@/components/number'
 import damoTime from '@/components/damoTime'
+import sort from '@/components/sort'
 
 Vue.use(Router)
 
@@ -67,9 +69,19 @@ export default new Router({
       component: number
     },
     {
+      path: '/realtime',
+      name: 'realtime',
+      component: realtime
+    },
+    {
       path: '/damoTime',
       name: 'damoTime',
       component: damoTime
+    },
+    {
+      path: '/sort',
+      name: 'sort',
+      component: sort
     }
   ]
 })
