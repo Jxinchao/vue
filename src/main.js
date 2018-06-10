@@ -15,7 +15,8 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
   // vuex的配置
   state:{
-    count:0
+    count:0,
+    actives : 'home'
   },
   mutations:{
     add(state){
@@ -23,6 +24,9 @@ const store = new Vuex.Store({
     },
     remove(state){
       state.count --;
+    },
+    menu (state, menu) {
+       state.actives = menu;
     }
   }
 })

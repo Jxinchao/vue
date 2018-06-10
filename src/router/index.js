@@ -17,11 +17,22 @@ import sort from '@/components/sort'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/',
+      name: 'content',
+      component: content
+    },
+    {
+      path:'/home',
+      name: 'content',
+      component: content
     },
     {
       path: '/login/:id',
