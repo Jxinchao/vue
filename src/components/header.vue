@@ -12,7 +12,7 @@
 				<b :class="{ actives: activeA.home }" @click="menuClicked('home')">首页</b>
 				<b :class="{ actives: activeA.setting }" @click="menuClicked('setting')">设置</b>
 				<b :class="{ actives: activeA.yonghu }" @click="menuClicked('yonghu')">用户</b>
-			</div>			
+			</div>
 		</header>
 	</div>
 </template>
@@ -91,10 +91,10 @@ header{
 	border:1px solid red;
 	padding: 20px;
 	box-sizing: border-box;
-}	
+}
 header div{
 	float: left;
-} 
+}
 header div:nth-child(2){
 	float: right;
 }

@@ -13,6 +13,8 @@ import questionnaire from '@/components/questionnaire'
 import number from '@/components/number'
 import damoTime from '@/components/damoTime'
 import sort from '@/components/sort'
+import vuex from '@/components/vuex'
+import content from '@/components/content'
 
 Vue.use(Router)
 
@@ -25,14 +27,14 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/',
-      name: 'content',
-      component: content
-    },
-    {
-      path:'/home',
-      name: 'content',
-      component: content
+      path: '/vuex',
+      name: 'vuex',
+      // component: vuex
+      components:{
+        default:vuex,
+        contents:content,
+        // image:Img,
+      }
     },
     {
       path: '/login/:id',
