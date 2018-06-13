@@ -15,6 +15,8 @@ import damoTime from '@/components/damoTime'
 import sort from '@/components/sort'
 import vuex from '@/components/vuex'
 import content from '@/components/content'
+import setting from '@/components/setting'
+import yonghu from '@/components/yonghu'
 
 Vue.use(Router)
 
@@ -29,15 +31,28 @@ export default new Router({
     {
       path: '/vuex',
       name: 'vuex',
-      // component: vuex
-      components:{
-        default:vuex,
-        contents:content,
-        // image:Img,
-      }
+      component: vuex,
+      redirect:'/home',
+      children:[
+        {
+          path:"/home",
+          name:"content",
+          component:content
+        },
+        {
+          path:"/setting",
+          name:"setting",
+          component:setting
+        },
+        {
+          path:"/yonghu",
+          name:"yonghu",
+          component:yonghu
+        }
+      ]
     },
     {
-      path: '/login/:id',
+      path: '/login',
       name: 'login',
       component: login
     },
