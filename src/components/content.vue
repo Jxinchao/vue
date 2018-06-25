@@ -15,7 +15,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.text{
 		margin: 100px;
 	}

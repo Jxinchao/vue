@@ -17,7 +17,7 @@
 	</div>
 </template>
 
-<script>
+<script >
 	import directive from '@/router/directive'
 	var abc = sessionStorage.getItem('name');
 	export default{
@@ -77,7 +77,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 *{
 	margin: 0;
 	padding:0;

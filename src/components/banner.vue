@@ -15,10 +15,10 @@
 另外就是记得给transition-group加上tag="ul"属性，不然就会被默认渲染成span了。
 
 css部分需要关联name属性值作为前缀。
-	
+
 
  -->
-				<transition-group tag="ul" name="image"> 
+				<transition-group tag="ul" name="image">
 					<li v-for="(imgSrcs,index) in imgSrc" :key="index" v-show="index === num">{{index}}---{{imgSrcs}}</li>
 				</transition-group>
 			</ul>
@@ -67,15 +67,15 @@ css部分需要关联name属性值作为前缀。
 				this.num = index;
 			}
 		},
-		created () {  
-		   this.play()  
-		}  
+		created () {
+		   this.play()
+		}
 	}
 </script>
 
-<style>
+<style scoped>
 *{
-	margin: 0; 
+	margin: 0;
 	padding: 0;
 }
 	li{
@@ -99,22 +99,22 @@ css部分需要关联name属性值作为前缀。
 	}
 	div.side{
 		position: relative;
-		width: 220px; 
+		width: 220px;
 		height: 300px;
 		overflow: hidden;
 	}
-	.image-enter-active {  
-	    transform: translateX(0);  
-	    transition: all 1.5s ease;  
-	  }  
-	  .image-leave-active {  
-	    transform: translateX(-200%);  
-	    transition: all 1.5s ease;  
-	  }  
-	  .image-enter {  
-	    transform: translateX(200%);  
-	  }  
-	  .image-leave {  
-	    transform: translateX(0);  
-	  }  
+	.image-enter-active {
+	    transform: translateX(0);
+	    transition: all 1.5s ease;
+	  }
+	  .image-leave-active {
+	    transform: translateX(-200%);
+	    transition: all 1.5s ease;
+	  }
+	  .image-enter {
+	    transform: translateX(200%);
+	  }
+	  .image-leave {
+	    transform: translateX(0);
+	  }
 </style>

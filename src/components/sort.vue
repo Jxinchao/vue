@@ -71,7 +71,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	span{
 		margin-left: 30px;
 	}

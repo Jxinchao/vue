@@ -3,7 +3,7 @@
 		我是用户页
 	</div>
 </template>
-<style>
+<style scoped>
 	.text{
 		margin: 100px;
 	}
