@@ -9,7 +9,7 @@ import header from '@/components/header';
 import footer from '@/components/footer';
 import footers from '@/components/content';
 
-export default {
+export default {   
   name: 'App',
   components: {
     "v-header": header,

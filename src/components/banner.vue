@@ -1,4 +1,4 @@
-<template>
+  <template>
 	<div>
 		<h1>轮播图</h1>
 		<div class="side" @mouseover="clearMove" @mouseout="outMove">
@@ -14,10 +14,10 @@
 
 另外就是记得给transition-group加上tag="ul"属性，不然就会被默认渲染成span了。
 
-css部分需要关联name属性值作为前缀。
+css部分需要关联name属性值作为前缀。 -->
 
 
- -->
+
 				<transition-group tag="ul" name="image">
 					<li v-for="(imgSrcs,index) in imgSrc" :key="index" v-show="index === num">{{index}}---{{imgSrcs}}</li>
 				</transition-group>
