@@ -16,6 +16,7 @@
       <router-link to="/sort">排序表格组件</router-link>
       <router-link to="/damoTime">大漠的日期</router-link>
       <router-link to="/vuex">光光Vux</router-link>
+      <router-link to="/lvcui">绿翠的高亮</router-link>
 
       <p>这里是vueX状态的值 {{ count }}</p>
       <button @click="adds">+1</button>

@@ -17,6 +17,7 @@ import vuex from '@/components/vuex'
 import content from '@/components/content'
 import setting from '@/components/setting'
 import yonghu from '@/components/yonghu'
+import lvcui from '@/components/a'
 
 Vue.use(Router)
 
@@ -110,6 +111,11 @@ export default new Router({
       path: '/sort',
       name: 'sort',
       component: sort
+    },
+    {
+      path: '/lvcui',
+      name: 'lvcui',
+      component: lvcui
     }
   ]
 })
