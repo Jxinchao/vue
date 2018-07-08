@@ -2,7 +2,7 @@
 	<div>
 		<h1>轮播图</h1>
 		<div class="side" @mouseover="clearMove" @mouseout="outMove">
-			<ul>
+			<ul>  
 			<!-- v-for列表渲染两个部分，值得注意的是列表渲染最好要提供一个key值，至于为什么官方文档说得很复杂，
 
 就我所知的是如果不加key值在使用transition-group也就是过渡效果的时候会出现bug，官方给出的建议也是尽可能
