@@ -18,6 +18,8 @@
       <router-link to="/vuex">光光Vux</router-link>
       <router-link to="/lvcui">绿翠的高亮</router-link>
 
+
+      <router-link to="/vueNode">VUE+NODE+数据库实战</router-link>
       <p>这里是vueX状态的值 {{ count }}</p>
       <button @click="adds">+1</button>
       <button @click="removes">-1</button>

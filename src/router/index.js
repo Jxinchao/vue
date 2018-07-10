@@ -18,6 +18,7 @@ import content from '@/components/content'
 import setting from '@/components/setting'
 import yonghu from '@/components/yonghu'
 import lvcui from '@/components/a'
+import vueNode from '@/components/vueNode/vueNode'
 
 Vue.use(Router)
 
@@ -116,6 +117,11 @@ export default new Router({
       path: '/lvcui',
       name: 'lvcui',
       component: lvcui
+    },
+    {
+      path: '/vueNode',
+      name: 'vueNode',
+      component: vueNode
     }
   ]
 })
