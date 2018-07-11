@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import login from '@/components/login'
-import lifecycle from '@/components/lifecycle'
+import HelloWorld from '@/components/HelloWorld'  // 主列表页
+import login from '@/components/login'            // 登录
+import lifecycle from '@/components/lifecycle'    //
 import shoping from '@/components/shoping'
 import tab from '@/components/tab'
 import banner from '@/components/banner'
@@ -16,10 +16,14 @@ import sort from '@/components/sort'
 import vuex from '@/components/vuex'
 import content from '@/components/content'
 import setting from '@/components/setting'
-import yonghu from '@/components/yonghu'
+import yonghu from '@/components/yonghu'             // 极光的测试用户
 import lvcui from '@/components/a'
-import vueNode from '@/components/vueNode/vueNode'
+import vueNode from '@/components/vueNode/vueNode'   // 实战vue+node+moogon
+import echartS from '@/components/echarts/echarts'   // echarts Home
+// 引入echarts
+import echarts from 'echarts'
 
+Vue.prototype.$echarts = echarts;
 Vue.use(Router)
 
 export default new Router({
@@ -122,6 +126,11 @@ export default new Router({
       path: '/vueNode',
       name: 'vueNode',
       component: vueNode
+    },
+    {
+      path: '/echartS',
+      name: 'echartS',
+      component: echartS
     }
   ]
 })
