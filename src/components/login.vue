@@ -5,7 +5,7 @@
       密码：  <input type="password" v-model="loginform.pwd">
       <br><br>
       <input type="button" value="登陆" @click="ajaxssss()">
-      
+
   </div>
 </template>
 

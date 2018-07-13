@@ -20,6 +20,7 @@ import yonghu from '@/components/yonghu'             // 极光的测试用户
 import lvcui from '@/components/a'
 import vueNode from '@/components/vueNode/vueNode'   // 实战vue+node+moogon
 import echartS from '@/components/echarts/echarts'   // echarts Home
+import linkage from '@/components/linkage/linkage'   // 城市三级联动
 // 引入echarts
 import echarts from 'echarts'
 
@@ -110,7 +111,7 @@ export default new Router({
     {
       path: '/damoTime',
       name: 'damoTime',
-      component: damoTime 
+      component: damoTime
     },
     {
       path: '/sort',
@@ -131,6 +132,11 @@ export default new Router({
       path: '/echartS',
       name: 'echartS',
       component: echartS
+    },
+    {
+      path: '/linkage',
+      name: 'linkage',
+      component: linkage
     }
   ]
 })
