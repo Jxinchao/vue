@@ -110,7 +110,7 @@ export default new Router({
     {
       path: '/damoTime',
       name: 'damoTime',
-      component: damoTime
+      component: damoTime 
     },
     {
       path: '/sort',
