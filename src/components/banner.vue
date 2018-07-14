@@ -1,7 +1,7 @@
   <template>
 	<div>
 		<h1>轮播图</h1>
-		<div class="side" @mouseover="clearMove" @mouseout="outMove">
+		<div class="side" @mouseover="clearMove" @mouseout="outMove"> 
 			<ul>  
 			<!-- v-for列表渲染两个部分，值得注意的是列表渲染最好要提供一个key值，至于为什么官方文档说得很复杂，
 
