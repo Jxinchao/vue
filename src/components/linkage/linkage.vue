@@ -1,5 +1,7 @@
 <template>
   <div id="example">
+    <router-link to="/threeW">网上得三级联动</router-link>
+
     	<select >
     		<option v-for="option in cityArr" :value="option.name">
     			{{ option.name}}
