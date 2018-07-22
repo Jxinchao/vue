@@ -28,8 +28,8 @@ css部分需要关联name属性值作为前缀。 -->
 				</template>
 			</div>
 		</div>
-	</div>
-</template>
+	</div> 
+</template>  
 
 <script>
 	export default{
