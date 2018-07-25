@@ -9,7 +9,7 @@ Vue.directive('clickoutside',{  // 获取事件
       }
       if(binding.expression){
         // 当前指令有没有写表达式，再该自定义指令中，表达式应该是一个函数，再过滤了内部元素后，点击外面任何区域应该执行用户表达式中得函数。所以binding.value()就是用来执行当前上下文methods中指定得函数得
-        binding.value(e); 
+        binding.value(e);
       }
     }
     el.__vueClickOutSide__ = documentHandler;
@@ -19,4 +19,4 @@ Vue.directive('clickoutside',{  // 获取事件
     document.removeEventListener('click',el.__vueClickOutSide__);
     delete el.__vueClickOutSide__;
   }
-});
+}); 
