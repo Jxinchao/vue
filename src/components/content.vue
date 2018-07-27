@@ -2,6 +2,12 @@
 	<div class="text">
 		<p>这里是vueX状态的值 {{ count }}</p>
 	</div>
+	<div class="text">
+		<p>这里是vueX状态的值 {{ count }}</p>
+	</div>
+	<div class="text">
+		<p>这里是vueX状态的值 {{ count }}</p>
+	</div>
 </template>
 
 <script>
@@ -16,7 +22,13 @@
 </script>
 
 <style scoped>
+	p{
+		width: 100px;
+	}
 	.text{
 		margin: 100px;
+	}
+	.text:last-child{
+		color:red;
 	}
 </style>
