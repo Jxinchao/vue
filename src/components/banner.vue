@@ -114,7 +114,7 @@ css部分需要关联name属性值作为前缀。 -->
 	  .image-enter {
 	    transform: translateX(200%);
 	  }
-	  .image-leave {
-	    transform: translateX(0); 
+	  .image-leave {  
+	    transform: translateX(0);  
 	  }
 </style>
