@@ -21,11 +21,14 @@
                 }
             }
         },
+        mounted:{
+          ajaxssss();
+        },
         methods:{
           ajaxssss:function(){
-            axios.post('/apis/login/login', {
-              username: this.loginform.name,
-              password: this.loginform.pwd
+            axios.get('localhost:8088/list/list', {
+              // username: this.loginform.name,
+              // password: this.loginform.pwd
             })
             .then(function (response) {
               console.log(response);

@@ -1,13 +1,15 @@
 <template>
-	<div class="text">
-		<p>这里是vueX状态的值 {{ count }}</p>
-	</div>
-	<div class="text">
-		<p>这里是vueX状态的值 {{ count }}</p>
-	</div>
-	<div class="text">
-		<p>这里是vueX状态的值 {{ count }}</p>
-	</div>
+  <div>
+    <div class="text">
+      <p>这里是vueX状态的值 {{ count }}</p>
+    </div>
+    <div class="text">
+      <p>这里是vueX状态的值 {{ count }}</p>
+    </div>
+    <div class="text">
+      <p>这里是vueX状态的值 {{ count }}</p>
+    </div>
+  </div>
 </template>
 
 <script>
