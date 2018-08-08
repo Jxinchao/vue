@@ -20,6 +20,7 @@
       <router-link to="/lvcui">绿翠的高亮</router-link>
       <router-link to="/echartS">echarts</router-link>
       <router-link to="/linkage">三级联动</router-link>
+      <router-link to="/register">注册</router-link>
 
       <router-link to="/vueNode">VUE+NODE+数据库实战</router-link>
 

@@ -21,12 +21,9 @@
                 }
             }
         },
-        mounted:{
-          ajaxssss();
-        },
         methods:{
           ajaxssss:function(){
-            axios.get('localhost:8088/list/list', {
+            axios.get('/apis/register/register', {
               // username: this.loginform.name,
               // password: this.loginform.pwd
             })

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'  // 主列表页
-import login from '@/components/login'            // 登录
+import login from '@/components/personal/login'            // 登录
 import lifecycle from '@/components/lifecycle'    //
 import shoping from '@/components/shoping'
 import tab from '@/components/tab'
@@ -22,6 +22,7 @@ import vueNode from '@/components/vueNode/vueNode'   // 实战vue+node+moogon
 import echartS from '@/components/echarts/echarts'   // echarts Home
 import linkage from '@/components/linkage/linkage'   // 城市三级联动
 import threeW from '@/components/linkage/threeW'   // 网上得三级联动
+import register from '@/components/personal/register'   // 注册
 // 引入echarts
 import echarts from 'echarts'
 
@@ -143,6 +144,11 @@ export default new Router({
       path: '/threeW',
       name: 'threeW',
       component: threeW
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: register
     }
   ]
 })
