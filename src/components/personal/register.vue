@@ -2,8 +2,9 @@
   <div class="login">
       用户名：<input type="text" v-model="loginform.name">
       <br><br>
-      密码：  <input type="password" v-model="loginform.pwd">
+      密码：  <input type="test" v-model="loginform.pwd">
       <br><br>
+      <input type="password" v-model="loginform.tel">
       <input type="button" value="登陆" @click="ajaxssss()">
 
   </div>
@@ -17,15 +18,17 @@
             return {
                 loginform: {
                   name:'',
-                  pwd:''
+                  pwd:'',
+                  tel:''
                 }
             }
         },
         methods:{
           ajaxssss:function(){
-            axios.get('/apis/register/register', {
-              // username: this.loginform.name,
-              // password: this.loginform.pwd
+            axios.post('/apis/register/register', {
+              uname: this.loginform.name,
+              tel:this.loginform.tel,
+              pwd: this.loginform.pwd
             })
             .then(function (response) {
               console.log(response);

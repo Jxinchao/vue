@@ -24,7 +24,9 @@ import linkage from '@/components/linkage/linkage'   // 城市三级联动
 import threeW from '@/components/linkage/threeW'   // 网上得三级联动
 import register from '@/components/personal/register'   // 注册
 // 引入echarts
-import echarts from 'echarts'
+import echarts from 'echarts';
+// 引入layer插件
+import layer from 'vue-layer';
 
 Vue.prototype.$echarts = echarts;
 Vue.use(Router)
