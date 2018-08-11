@@ -2,9 +2,10 @@
   <div class="login">
       用户名：<input type="text" v-model="loginform.name">
       <br><br>
-      密码：  <input type="test" v-model="loginform.pwd">
+      密码：  <input type="text" v-model="loginform.pwd">
       <br><br>
-      <input type="password" v-model="loginform.tel">
+      手机号：  <input type="password" v-model="loginform.tel">
+      <br><br>
       <input type="button" value="登陆" @click="ajaxssss()">
 
   </div>
