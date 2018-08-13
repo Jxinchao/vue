@@ -12,7 +12,7 @@ Vue.use(Vuex);
 // window.axios = require('axios')
 // Vue.config.productionTip = false
 
-const store = new Vuex.Store({
+const store = new Vuex.Store({  
   // vuex的配置
   state:{
     count:0,
