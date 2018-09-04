@@ -16,7 +16,7 @@
         data () {
             return {
                 loginform: {
-                  name:'',
+                  name:'', 
                   pwd:''
                 }
             }
