@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首页</title>
   <link rel="stylesheet" href="css/rest.css" />
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -26,12 +27,12 @@
 <div class="nav">
 	<div class="nav_content">
 		<ul>
-		  <li><a href="javascript:;" class="active">首页</a></li>
+		  <li><a href="index.html" class="active">首页</a></li>
 	      <li><a href="javascript:;">核心产品</a></li>
 	      <li><a href="javascript:;">关于紫润科技</a></li>
 	      <li><a href="javascript:;">品牌故事</a></li>
 	      <li><a href="javascript:;">健康生活</a></li>
-	      <li><a href="javascript:;">新闻中心</a></li>
+	      <li><a href="news.html">新闻中心</a></li>
 	      <li><a href="javascript:;">联系我们</a></li>
 		</ul>
 	</div>
@@ -39,7 +40,19 @@
 <!--nav end-->
 <!--banner start-->
 <div class="banner">
-	<img src="images/banner_02.png"/>
+	 <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/banner_02.png"/></div>
+      <div class="swiper-slide"><img src="images/banner_02.png"/></div>
+      <div class="swiper-slide"><img src="images/banner_02.png"/></div>
+      <div class="swiper-slide"><img src="images/banner_02.png"/></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+	
 </div>
 <!--banner end-->
 <!-- 什么是痛风 start-->
@@ -214,5 +227,18 @@
 		Copyright © 2018 ***************************
 	</div>
 </div>
+<!-- Swiper JS -->
+  <script src="js/swiper.min.js.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+  	  autoplay:true,
+	  navigation: {
+	    nextEl: '.swiper-button-next',
+	    prevEl: '.swiper-button-prev',
+	  },
+   });
+</script>
 </body>
 </html>
