@@ -236,3 +236,31 @@
   color: #282828;
   line-height: 32px;
 }
+.news_side_nav {
+  height: 300px;
+  width: 98px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  z-index: 99;
+}
+.news_side_nav ul li a {
+  display: block;
+  height: 98px;
+  background: #637388;
+  overflow: hidden;
+}
+.news_side_nav ul li a img {
+  display: block;
+  width: 52px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.news_side_nav ul li a p {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+}

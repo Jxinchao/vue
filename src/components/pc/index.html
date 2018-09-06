@@ -28,12 +28,12 @@
 	<div class="nav_content">
 		<ul>
 		  <li><a href="index.html" class="active">首页</a></li>
-	      <li><a href="javascript:;">核心产品</a></li>
-	      <li><a href="javascript:;">关于紫润科技</a></li>
-	      <li><a href="javascript:;">品牌故事</a></li>
-	      <li><a href="javascript:;">健康生活</a></li>
+	      <li><a href="javascript:;" id="div1Link">核心产品</a></li>
+	      <li><a href="javascript:;" id="div2Link">关于紫润科技</a></li>
+	      <li><a href="javascript:;" id="div3Link">品牌故事</a></li>
+	      <li><a href="javascript:;" id="div4Link">健康生活</a></li>
 	      <li><a href="news.html">新闻中心</a></li>
-	      <li><a href="javascript:;">联系我们</a></li>
+	      <li><a href="javascript:;" id="div5Link">联系我们</a></li>
 		</ul>
 	</div>
 </div>
@@ -56,7 +56,7 @@
 </div>
 <!--banner end-->
 <!-- 什么是痛风 start-->
-<div class="side_nav">
+<div class="side_nav" id="div1">
 	<div class="side_nav_con">
 		<div>
 			<ul>
@@ -83,7 +83,7 @@
 </div>
 <!-- 什么是痛风 end --> 
 <!-- 什么是痛风 start-->
-<div class="gout">
+<div class="gout" id="div2">
 	<h1>什么是痛风</h1>
 	<span>
 		<img src="images/tag_03.png"/>
@@ -104,7 +104,7 @@
 </div>
 <!-- 什么是痛风 end --> 
 <!-- 糖果 start -->
-<div class="candy">
+<div class="candy" id="div3">
 	<div class="text">
 		<p>紫润科技·花色素压片糖果 +</p>
 		<span>The pride and self - confidence of the Republic of Korea on all</span>
@@ -113,7 +113,7 @@
 </div>
 <!-- 糖果 end -->
 <!--新闻资讯 start-->
-<div class="news">
+<div class="news" id="div4">
 	<h1>新闻资讯</h1>
 	<span>
 		<img src="images/tag_03.png"/>
@@ -176,7 +176,7 @@
 </div>
 <!--新闻资讯 end-->
 <!-- 品牌故事 start -->
-<div class="brand">
+<div class="brand" id="div5">
 	<h1>品牌故事</h1>
 	<span>
 		<img src="images/tag_03.png"/>
@@ -228,6 +228,7 @@
 	</div>
 </div>
 <!-- Swiper JS -->
+  <script src="js/jquery.min.js"></script>
   <script src="js/swiper.min.js.js"></script>
 
   <!-- Initialize Swiper -->
@@ -239,6 +240,62 @@
 	    prevEl: '.swiper-button-prev',
 	  },
    });
+
+if(window.location.hash == '#div1'){
+	$('.nav_content a').removeClass('active');
+	$('#div1Link').addClass('active')
+}
+if(window.location.hash == '#div2'){
+	$('.nav_content a').removeClass('active');
+	$('#div2Link').addClass('active')
+}
+if(window.location.hash == '#div3'){
+	$('.nav_content a').removeClass('active');
+	$('#div3Link').addClass('active')
+}
+if(window.location.hash == '#div4'){
+	$('.nav_content a').removeClass('active');
+	$('#div4Link').addClass('active')
+}
+if(window.location.hash == '#div5'){
+	$('.nav_content a').removeClass('active');
+	$('#div5Link').addClass('active')
+}
+$("#div1Link").click(function() {
+	$('.nav_content a').removeClass('active');
+	$(this).addClass('active')
+	$("html, body").animate({
+	scrollTop: $("#div1").offset().top }, {duration: 500,easing: "swing"});
+	return false;
+});
+$("#div2Link").click(function() {
+	$('.nav_content a').removeClass('active');
+	$(this).addClass('active')
+	$("html, body").animate({
+	scrollTop: $("#div2").offset().top }, {duration: 500,easing: "swing"});
+	return false;
+});
+$("#div3Link").click(function() {
+	$('.nav_content a').removeClass('active');
+	$(this).addClass('active')
+	$("html, body").animate({
+	scrollTop: $("#div3").offset().top }, {duration: 500,easing: "swing"});
+	return false;
+});
+$("#div4Link").click(function() {
+	$('.nav_content a').removeClass('active');
+	$(this).addClass('active')
+	$("html, body").animate({
+	scrollTop: $("#div4").offset().top }, {duration: 500,easing: "swing"});
+	return false;
+});
+$("#div5Link").click(function() {
+	$('.nav_content a').removeClass('active');
+	$(this).addClass('active')
+	$("html, body").animate({
+	scrollTop: $("#div5").offset().top }, {duration: 500,easing: "swing"});
+	return false;
+});
 </script>
 </body>
 </html>

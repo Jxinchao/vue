@@ -26,13 +26,13 @@
 <div class="nav">
 	<div class="nav_content">
 		<ul>
-		  <li><a href="index.html" >首页</a></li>
-	      <li><a href="javascript:;">核心产品</a></li>
-	      <li><a href="javascript:;">关于紫润科技</a></li>
-	      <li><a href="javascript:;">品牌故事</a></li>
-	      <li><a href="javascript:;">健康生活</a></li>
+		  <li><a href="index.html">首页</a></li>
+	      <li><a href="index.html?id=1#div1" id="div1Link">核心产品</a></li>
+	      <li><a href="index.html#div2" id="div2Link">关于紫润科技</a></li>
+	      <li><a href="index.html#div3" id="div3Link">品牌故事</a></li>
+	      <li><a href="index.html#div4" id="div4Link">健康生活</a></li>
 	      <li><a href="news.html" class="active">新闻中心</a></li>
-	      <li><a href="javascript:;">联系我们</a></li>
+	      <li><a href="index.html#div5" id="div5Link">联系我们</a></li>
 		</ul>
 	</div>
 </div>
@@ -176,6 +176,7 @@
 </div>
 </body>
 <script src="js/swiper.min.js.js"></script>
+<script src="js/jquery.min.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
     	  autoplay:true,
@@ -183,5 +184,40 @@
         el: '.swiper-pagination',
       },
     });
+$("#div1Link").click(function() {
+	$('.nav_content a').removeClass('active');
+	$(this).addClass('active')
+	$("html, body").animate({
+	scrollTop: $("#div1").offset().top }, {duration: 500,easing: "swing"});
+	return false;
+});
+$("#div2Link").click(function() {
+	$('.nav_content a').removeClass('active');
+	$(this).addClass('active')
+	$("html, body").animate({
+	scrollTop: $("#div2").offset().top }, {duration: 500,easing: "swing"});
+	return false;
+});
+$("#div3Link").click(function() {
+	$('.nav_content a').removeClass('active');
+	$(this).addClass('active')
+	$("html, body").animate({
+	scrollTop: $("#div3").offset().top }, {duration: 500,easing: "swing"});
+	return false;
+});
+$("#div4Link").click(function() {
+	$('.nav_content a').removeClass('active');
+	$(this).addClass('active')
+	$("html, body").animate({
+	scrollTop: $("#div4").offset().top }, {duration: 500,easing: "swing"});
+	return false;
+});
+$("#div5Link").click(function() {
+	$('.nav_content a').removeClass('active');
+	$(this).addClass('active')
+	$("html, body").animate({
+	scrollTop: $("#div5").offset().top }, {duration: 500,easing: "swing"});
+	return false;
+});
 </script>
 </html>
