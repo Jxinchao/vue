@@ -23,7 +23,7 @@
 </div>
 <!-- header end -->
 <!--nav start-->
-<div class="nav">
+<div class="nav" id="bar">
 	<div class="nav_content">
 		<ul>
 		  <li><a href="index.html">首页</a></li>
@@ -214,5 +214,16 @@ $("#div5Link").click(function() {
 	return false;
 });
 })
+ $(function () {
+    var barTop = $('#bar').offset().top;
+	$(window).on('scroll',function () {
+    var scrollTop = $(document).scrollTop();
+	    if (scrollTop >= barTop) {
+	        $('#bar').css({position: 'fixed',top: 0,zIndex:999});
+	    } else {
+       	 	$('#bar').css('position','static');
+        }
+    });
+ });
 </script>
 </html>

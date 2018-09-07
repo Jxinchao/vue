@@ -40,6 +40,7 @@
 }
 .nav {
   height: 112px;
+  width: 100%;
   background: #051e3c;
 }
 .nav .nav_content {

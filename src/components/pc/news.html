@@ -23,7 +23,7 @@
 </div>
 <!-- header end -->
 <!--nav start-->
-<div class="nav">
+<div class="nav" id="bar">
 	<div class="nav_content">
 		<ul>
 		  <li><a href="index.html">首页</a></li>
@@ -174,6 +174,24 @@
 		Copyright © 2018 ***************************
 	</div>
 </div>
+<!-- 侧边栏 start -->
+<div class="news_side_nav">
+	<ul>
+		<li><a href="javascript:;">
+			<img src="images/side_nav_03.png"/>
+			<p>在线互动</p>
+		</a></li>
+		<li><a href="javascript:;">
+			<img src="images/side_nav_06.png"/>
+			<p>郑重承诺</p>
+		</a></li>
+		<li><a href="javascript:;" class="return_top">
+			<img src="images/side_nav_08.png"/>
+			<p>回到顶部</p>
+		</a></li>
+	</ul>
+</div>
+<!-- 侧边栏 end -->
 </body>
 <script src="js/swiper.min.js.js"></script>
 <script src="js/jquery.min.js"></script>
@@ -184,6 +202,25 @@
         el: '.swiper-pagination',
       },
     });
+$('.news_side_nav').fadeOut(0);
+//为当前窗口添加滚动条滚动事件（适用于所有可滚动的元素和 window 对象（浏览器窗口））
+$(window).scroll(function(){
+	 //创建一个变量存储当前窗口下移的高度
+	var scroTop = $(window).scrollTop();
+	//判断当前窗口滚动高度
+	//如果大于100，则显示顶部元素，否则隐藏顶部元素
+	if(scroTop>100){
+		$('.news_side_nav').fadeIn(500);
+	}else{
+		$('.news_side_nav').fadeOut(500);
+	}
+});
+	    	
+//为返回顶部元素添加点击事件
+$('.return_top').click(function(){
+	//将当前窗口的内容区滚动高度改为0，即顶部
+	$("html,body").animate({scrollTop:0},"fast");
+});
 $("#div1Link").click(function() {
 	$('.nav_content a').removeClass('active');
 	$(this).addClass('active')
@@ -219,5 +256,16 @@ $("#div5Link").click(function() {
 	scrollTop: $("#div5").offset().top }, {duration: 500,easing: "swing"});
 	return false;
 });
+ $(function () {
+    var barTop = $('#bar').offset().top;
+    $(window).on('scroll',function () {
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop >= barTop) {
+            $('#bar').css({position: 'fixed',top: 0,zIndex:999});
+        } else {
+            $('#bar').css('position','static');
+        }
+    });
+ });
 </script>
 </html>
