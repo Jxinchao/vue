@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class=ie8><![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!-->
+<html>
+	<!--<![endif]-->
+	<!--[if IE 9 ]><html class=ie9><![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>快传号</title>
+		<meta name=viewport content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name=renderer content=webkit>
+		<!-- <meta name=keywords content="快传号,众媒平台,众媒号,快传自媒体,众媒自媒体,360自媒体平台,360快传号,360众媒号,360众媒平台,360自媒体,众媒360,快传360">
+		<meta name=description content="快传号为360公司旗下的自媒体平台，为原创作者提供了展现自我的广阔空间，并将其优质的内容在360各产品端精准推荐给欣赏自己的受众。让那个用心书写的人，更加闪耀夺目。">
+		<meta name=description itemprop=description content="快传号为360公司旗下的自媒体平台，为原创作者提供了展现自我的广阔空间，并将其优质的内容在360各产品端精准推荐给欣赏自己的受众。让那个用心书写的人，更加闪耀夺目。"> -->
+		<meta name="360-site-verification" content=d15e01aaede43c86765496d30e6f1ce3>
+		<meta name="baidu-site-verification" content=a9XED4Q0oN>
+		<meta name=token content="eaaac2f4677f25c302aa5499399b1bf8">
+		<link rel=stylesheet href="css/index1.css">
+		<link rel=icon href="https://p0.ssl.qhimg.com/t0144491522ec4696d3.png">
+		<style>
+			.ie8 #open-news {
+				display: none
+			}
+
+			.ie8,
+			.ie8 body {
+				background: #f98d2e;
+				height: 100%
+			}
+
+			#warning {
+				display: none;
+				height: 100%;
+				text-align: center
+			}
+
+			#warning,
+			#warning .warn {
+				position: relative;
+				width: 100%
+			}
+
+			#warning .warn {
+				font-size: 30px;
+				height: 50px;
+				line-height: 50px;
+				top: 100px
+			}
+
+			.ie8 #warning {
+				display: block
+			}
+		</style>
+	</head>
+
+	<body>
+		<div style="left:-99999px;position:absolute"> <img src="https://p3.ssl.qhimg.com/t014a3dbfdbe5409af0.png" width=500> </div>
+		<div id=app></div>
+		<div class="footer zm-gray hidden">
+			<div>Copyright©2005-<span class=copyright></span> 360.com 版权所有 360互联网安全中心</div>
+			<div>
+				<a href="http://sh.qihoo.com/pc/static/resources/%E4%B8%8A%E6%B5%B7%E4%BA%BF%E4%B9%8B%E5%94%90%E5%A2%9E%E5%80%BC%E7%94%B5%E4%BF%A1%E4%B8%9A%E5%8A%A1%E7%BB%8F%E8%90%A5%E8%AE%B8%E5%8F%AF%E8%AF%81.pdf" target=_blank>沪B2-20090143 </a>
+				<a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target=_blank>[京ICP备08010314号-5] </a>
+				<a href="http://sh.qihoo.com/pc/static/resources/%E4%B8%8A%E6%B5%B7%E4%BA%BF%E4%B9%8B%E5%94%90-%E4%BA%92%E8%81%94%E7%BD%91%E6%96%B0%E9%97%BB%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1%E8%AE%B8%E5%8F%AF%E8%AF%81.pdf" target=_blank>互联网新闻信息服务许可证</a>
+			</div>
+			<div>
+				<div style="background:url(https://p0.ssl.qhimg.com/t01d8eda6e551cf2615.png);display:inline-block;height:20px;vertical-align:bottom;width:20px"></div>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000022" target=_blank>京公网安备 11000002000022号</a>
+			</div>
+		</div>
+		<div id=warning>
+			<p class=warn> 本项目暂不支持ie8以下浏览器，请您更换
+				<a href="http://se.360.cn/">360浏览器</a>等其他浏览器进行访问。 </p>
+		</div>
+		<script src="js/191.js"></script>
+		<script src="js/5.0.3.js"></script>
+		<script>
+			window.user = {
+				name: "",
+				qid: "",
+				img: "",
+				is_registed: "", // 1已注册快传号 0未注册快传号
+				status: "", // 用户状态，0代表待审核，1代表审核通过，2代表审核未通过，3代表异常
+				type: "", // 1媒体（媒体具有RSS数据接入权限)；0个人, 为空时进入选择类型
+				forbid: "", // 1 被加黑；0正常
+				real_user: "", // 1其360账户绑定了手机号或者邮箱；0未绑定
+				ad: "", // 1导航栏显示自营广告；0隐藏
+				video_ad: "", // 1导航栏显示视频广告；0隐藏
+				mcn: "", // 1母账号;2子账号;0普通账号
+				exponent: "", // 1有众媒指数权限；0无众媒指数权限
+				hasother: "", // 1有无公众号头条号信息
+				is_conflict: "", // 1与马甲号冲突
+				level: "", // 账号等级
+				invite: "", // 1媒体邀请
+				privilege: "", // 数组 1：有广告权限，2：有子账号权限  3：有视频广告权限  4：首发权限
+				is_agreement: "", // 1同意视频首发
+				is_net: "0", // 是否同意了网签协议
+
+				has_toutiao: "", // 是否有头条号资料
+				is_verified: "",
+
+				// 不建议将PHP注入的字段使用""的形式括起来，会导致一些类型转化！！！
+				is_cleared: null, // 0 未注销  已注销则值为日期字符串
+				online_zm: null,
+				is_ugc: [] === null || [] === undefined || [].length == 0 ? 0 : 1,
+				common_user: [],
+				subsidy_state: "" // 补贴开通情况 0 未开通 1 已开通 2 审核未通过 3 审核中 4 黑名单账户
+			}
+			window.busType = 10;
+			$('.copyright').text(new Date().getFullYear());
+		</script>
+		<script src="js/lib.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/86d6d5ff3561f16c.js"></script>
+		<script>
+			monitor.setProject("QH_240_2").getTrack().getClickAndKeydown().getClickHeatmap(10, 1)
+		</script>
+	</body>
+
+</html>

@@ -296,6 +296,17 @@ $("#div5Link").click(function() {
 	scrollTop: $("#div5").offset().top }, {duration: 500,easing: "swing"});
 	return false;
 });
+ $(function () {
+    var barTop = $('#bar').offset().top;
+    $(window).on('scroll',function () {
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop >= barTop) {
+            $('#bar').css({position: 'fixed',top: 0,zIndex:999});
+        } else {
+            $('#bar').css('position','static');
+        }
+    });
+ });
 </script>
 </body>
 </html>
