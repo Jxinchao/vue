@@ -7,7 +7,6 @@
   z-index: 3;
   top: 0;
   left: 0;
-  opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
   -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
@@ -32,9 +31,13 @@
 }
 .menus .menus-con div a {
   display: block;
+}
+.menus .menus-con div a span {
   color: #fff;
   font-size: 16px;
   text-align: center;
+  display: block;
+  opacity: 0;
 }
 .menus .menus-con div a img {
   display: block;
@@ -46,9 +49,28 @@
 .menus .menus-con div.active a {
   line-height: 50px;
 }
+.menus .menus-con div.active a span {
+  opacity: 1;
+}
 .menus .menus-con div.active a img {
   display: block;
   margin: 35px auto 0;
+}
+.menus .menus-con div:hover {
+  border: 1px solid #fff;
+  transition: border 1s;
+}
+.menus .menus-con div:hover a {
+  line-height: 50px;
+}
+.menus .menus-con div:hover a span {
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+.menus .menus-con div:hover a img {
+  display: block;
+  margin: 35px auto 0;
+  transition: 0.8s;
 }
 .menus .menus-con div:nth-child(2),
 .menus .menus-con div:nth-child(5) {

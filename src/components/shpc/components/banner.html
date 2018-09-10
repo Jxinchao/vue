@@ -19,38 +19,39 @@
 			<div class="menus">
 				<div class="menus-con">
 					<div class="active">
-						<a href="javascript:;" class="active">
+						<a href="javascript:;">
 							<img src="../images/nav_06.gif" alt="" /> 
-							首页
+							<span>首页</span>
 						</a>
 					</div>
 					<div>
-						<a href="javascript:;" class="active">
+						<a href="javascript:;" >
 							<img src="../images/nav_03.gif" alt="" /> 
+							<span>公司介绍</span>
 						</a>
 					</div>
 					<div>
-						<a href="javascript:;" class="active">
+						<a href="javascript:;">
 							<img src="../images/nav_09.gif" alt="" /> 
 						</a>
 					</div>
 					<div>
-						<a href="javascript:;" class="active">
+						<a href="javascript:;">
 							<img src="../images/nav_14.gif" alt="" /> 
 						</a>
 					</div>
 					<div>
-						<a href="javascript:;" class="active">
+						<a href="javascript:;">
 							<img src="../images/nav_15.gif" alt="" /> 
 						</a>
 					</div>
 					<div>
-						<a href="javascript:;" class="active">
+						<a href="javascript:;">
 							<img src="../images/nav_16.gif" alt="" /> 
 						</a>
 					</div>
 					<div>
-						<a href="javascript:;" class="active">
+						<a href="javascript:;">
 							<img src="../images/nav_20.png" alt="" /> 
 						</a>
 					</div>
@@ -61,13 +62,17 @@
 		<script>
 			$(".menu").click(function(){
 				event.stopPropagation();
-				$(".menus").css("display","block");
+				$(".menus").slideDown();
+				$(this).find("img").attr("src","../images/menu_active_03.png")
+				$(this).find("img").css({"position":"absolute","z-index":"4","right":"50px","top":"50px"})
 			})
 			$(".menus div").click(function(){
 				event.stopPropagation();
 			})
 			$(document).click(function(){
-				$(".menus").css("display","none");
+				$(".menus").slideUp();
+				$(".menu").find("img").attr("src","../images/logo_05.png")
+				$(".menu").find("img").css({"position":"static","z-index":"4"})
 			})
 		</script>
 	</body>

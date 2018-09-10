@@ -47,26 +47,5 @@
 	})
 </script>
 <!-- return top end -->
-<script>
-	//初始化函数
-	init();
-    function init(){
-        //获取顶部元素的DOM
-        var wrap = document.getElementById('.banner');
-        var scrollTop = 0;    //初始化为顶部
-        //监听页面滚动事件
-        window.onscroll=function(){
-            //获取当前的滚动距离
-            scrollTop =
-                document.body.scrollTop||document.documentElement.scrollTop;
-            //获取超过150像素的滚动，就把导航菜单DIV设置为固定的
-            if(scrollTop > 150){
-                wrap.className = 'the_top';//固定下来的样式
-            }else{
-                wrap.className = 'wrap';//恢复原有样式
-            }
-        }
-     }
-</script>
 </body>
 </html>
