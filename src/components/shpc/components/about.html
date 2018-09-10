@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/rest.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/about.css"/>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.include.js"></script>
+  <title>关于我们</title>
+</head>
+<body>
+<!-- header banner start -->
+<script id="block_header">
+	$(function () {
+		$("#block_header").include("banner.html");
+	})
+</script>
+<!-- header banner end -->
+<!-- content start -->
+<div class="about-content">
+	<div class="about">
+		<p>当前位置：<span>首页</span> - 关于我们</p>
+		<div class="about-text">
+			<p>北京爱炼科技有限公司于2017年在北京成立，是一家集研发、生产、销售高端运动营养产品的新兴科技公司。</p>
+			<p>公司两位创始人，都拥有丰富的海外留学经历。他们留学归来，怀揣着梦想和希望聚集在北京，以“全面提升全民体质”为理念，以“追求科学管理、打造完美品质”为核心价值成立了这家公司。并召集数位在运动营养领域颇有建树的专家，组成了研发团队，秉持着“营养、健康、美味、便捷”的品牌理念，创造了一个中国人自己的高蛋白含乳饮品品牌——八克白。旗下产品类别详细，几乎涵盖了所有消费者的喜好与需求。</p>
+			<p>八克白始终坚持采用由国外天然原草，自然放牧孕育出的奶牛产出的高品质原奶，精心甄选出优质牛乳蛋白和其它重要营养元素，通过膜分离技术实现蛋白分子结构的优化重组，打造出更容易被亚洲人体质吸收，更符合亚洲人口味的蛋白质补充饮品。
+			</p>
+			<p>八克白研发团队的核心人物均拥有10至20年的食品研发经验，均是出自大型食品饮料企业研究中心的高级工程师，他们从最专业的角度去分析八克白维持身体健康的最佳营养密度，以及控制人体最佳的新陈代谢，并且做了卡路里计算，实现了真正意义上的有营养没负担。</p>
+			<p>我们的发展愿景是在未来的几年内，将八克白打造成引领中国运动营养市场的驰名品牌。同时，我们具备着国民健康的责任感与使命感，一定会向社会贡献出更多“营养、健康、美味、便捷”的系列饮品，为提升全民体质，强大民族力量而奋斗到底。</p>
+		</div>
+	</div>
+</div>
+<!-- content end -->
+<!-- footer start -->
+<script id="block_footer">
+	$(function () {
+		$("#block_footer").include("footer.html");
+	})
+</script>
+<!-- footer end -->
+<!-- return top start -->
+<script id="block_return">
+	$(function () {
+		$("#block_return").include("return_top.html");
+	})
+</script>
+<!-- return top end -->
+<script>
+	//初始化函数
+	init();
+    function init(){
+        //获取顶部元素的DOM
+        var wrap = document.getElementById('.banner');
+        var scrollTop = 0;    //初始化为顶部
+        //监听页面滚动事件
+        window.onscroll=function(){
+            //获取当前的滚动距离
+            scrollTop =
+                document.body.scrollTop||document.documentElement.scrollTop;
+            //获取超过150像素的滚动，就把导航菜单DIV设置为固定的
+            if(scrollTop > 150){
+                wrap.className = 'the_top';//固定下来的样式
+            }else{
+                wrap.className = 'wrap';//恢复原有样式
+            }
+        }
+     }
+</script>
+</body>
+</html>

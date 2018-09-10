@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*css reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+form, .fl, .fr, div, footer {
+    font-size: 20px;
+}
+
+html {
+    font-size: 100px;
+    height: 100%;
+}
+
+body {
+    background: #F5F5F5;
+    color: #666;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "STHeitiSC-Light", Arial, sans-serif !important;
+    height: 100%;
+
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover, a:focus,a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+.w100{
+    width: 100%;
+}
+.pr{
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
+.pf{
+    position: fixed;
+}
+.marginLf35{
+    margin-left: 35px;
+}
+.of{
+    overflow: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+   float: right;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 40px 40px !important;
+}
+.tc{
+    text-align: center;
+}
+.common-btn{
+    display: block;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    margin: auto;
+    border-radius: 50px;
+    line-height: 40px;
+    border:1px solid #ffffff;
+}
+.common-btn:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.displayTable{
+    display: table;
+}
+.vetically{
+    display: table-cell;
+    vertical-align: middle;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mt40{
+    margin-top: 40px;
+}
+.mt50{
+    margin-top: 50px;
+}
