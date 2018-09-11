@@ -18,39 +18,129 @@
         <div class="banner">
         		 <div class="swiper-container">
 			    <div class="swiper-wrapper">
-			      <div class="swiper-slide">
-			      	<img src="images/banner3_01.png"/>
+			    	  <div class="swiper-slide">
+			      	<img src="images/banner1_01.png"/>
+			      	<div>
+			      		<img src="images/logo.png"/>
+			      		<p>"人工智能+大数据+区块链"三大科技助力产业发展</p>
+			      		<p style="margin-top: 40px;">打造全新智慧中医盈利模式</p>
+			      		<div class="code"><a href="javascript:;">项目文件</a></div>
+			      	</div>
 			      </div>
 			      <div class="swiper-slide">
 			      	<img src="images/banner2_01.png"/>
+			      	<div>
+			      		<img src="images/logo.png"/>
+			      		<p>小和AISCM——您的私人超能中医</p>
+			      		<div class="code"><img src="images/yonghu.png"/></div>
+			      	</div>
 			      </div>
 			      <div class="swiper-slide">
-			      	<img src="images/banner1_01.png"/>
+			      	<img src="images/banner3_01.png"/>
+			      	<div>
+			      		<img src="images/logo.png"/>
+			      		<p>和易通——最便捷的医生工作移动站</p>
+			      		<div class="code"><img src="images/doctor.png"/></div>
+			      	</div>
 			      </div>
+			      
+			      
 			    </div>
 			    <!-- Add Pagination -->
 			    <div class="swiper-pagination"></div>
 			  </div>
         </div>
-        <div class="mouse"><img src="images/mouse.gif"/></div>
+        <div class="mouse">
+        		<img src="images/mouse.gif"/>
+        </div>
     </div>
-    <div class="section">
-       2
+    <div class="section two">
+       <p>传统中医技术+互联网技术--重塑中医治疗标准体系</p>
+       <ul>
+	       	<li>
+	       		<img src="images/images/xt8.png" alt="" />
+	       		<img src="images/images/xt9.png" alt="" />
+	       		<img src="images/images/xt.png" alt="" />
+	       		<img src="images/images/xt11.png" alt="" />
+	       		<img src="images/images/xt12.png" alt="" />
+	       		<img src="images/images/xt13.png" alt="" />
+	       	</li>
+       </ul>
+       <div>
+       		<img src="images/images/server_12.png"/>
+       		<img src="images/images/server_15.png"/>
+       		<img src="images/images/server_20.png"/>
+       		<img src="images/images/server_20.png"/>
+       		<p>综合提高人体生命健康质量</p>
+       </div>
     </div>
-    <div class="section">
-        3
+    <div class="section three">
+       <p>三大核心和凝为一  重塑中医文化属性</p>
+       <div>
+       		<ul>
+       			<li>
+       				<p>· &nbsp;&nbsp; 传统医疗技术</p>
+       				<p>· &nbsp;&nbsp; 互联网技术</p>
+       				<p>· &nbsp;&nbsp; 资本模式</p>
+       			</li>
+       			<li>
+       				<img src="images/images/taiji_16.png"/>
+       				<div class="radios"></div>
+       				<img src="images/images/model_16.png" alt="" />
+       				<img src="images/images/model_20.png" alt="" />
+       				<img src="images/images/model_23.png" alt="" />
+       			</li>
+       		</ul>
+       </div>
     </div>
-    <div class="section">
-        4
+    <div class="section four">
+    		<p>四大体系 提供医疗健康全方位服务</p>
+    		<div>
+    			<dl>
+	    			<dt>中医智能评测体系</dt>
+	    			<dd>智能诊测</dd>
+	    			<dd>智能导诊</dd>
+	    			<dd>省去无效问诊时间</dd>
+	    		</dl>
+	    		<dl>
+	    			<dt>中医智能匹配系统</dt>
+	    			<dd>智能辨识</dd>
+	    			<dd>智能匹配</dd>
+	    			<dd>确保方案完整性</dd>
+	    		</dl>
+	    		<dl>
+	    			<dt>智能监控及健康数据价值体系</dt>
+	    			<dd>院外监控</dd>
+	    			<dd>实时反馈</dd>
+	    			<dd>数据分析更有依据</dd>
+	    		</dl>
+	    		<dl>
+	    			<dt>医生工作管理服务体系</dt>
+	    			<dd>诊疗管理</dd>
+	    			<dd>运营管理</dd>
+	    			<dd>品牌管理</dd>
+	    		</dl>
+    		</div>
 
     </div>
-    <div class="section">
-       5
+    <div class="section five">
+       <div>
+       		<p>和医通</p>
+       		<p>为中医门诊提供全新智慧中医商业模式</p>
+       		<p>助力中医门诊（中医院）高速发展</p>
+       		<p>为患者搭建完整居家医疗场景</p>
+       		<p>实现全医疗健康服务闭环</p>
+       		<div>
+       			<a href="javasccript:;">关于我们</a>
+       			<a href="javasccript:;">联系我们</a>
+       		</div>
+       		<p>Copyright©2016 和易坤（北京）科技有限公司 .All Rights Reserved 京ICP备16068455号</p>
+       </div>
     </div>
-    <div class="section">
+    <!--<div class="section">
         <h3>第四屏</h3>
         <p>这是最后一屏</p>
-    </div>
+    </div>-->
 </div>
 </body>
 <script>
@@ -60,9 +150,8 @@
         });
     });
     var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-      },
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
     });
 //  var swiper1 = new Swiper('.banner1 .swiper-container', {
 //      pagination: '.swiper-pagination',
