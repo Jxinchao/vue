@@ -1,0 +1,324 @@
+/*首页*/
+.banner1,
+.swiper-container,
+.firm-banner {
+    width: 100%;
+    height: 100%;
+}
+
+.text1 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: table;
+}
+
+.text1 .text-content {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.text1 .text-content span {
+    display: block;
+    color: #ffffff;
+    font-size: 72px;
+}
+
+.text1 .text-content small {
+    font-size: 32px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.index-left, .index-right {
+    width: 50%;
+    height: 100%;
+}
+
+.index-left-contnt,
+.index-right-contnt {
+}
+
+/*公司*/
+.banner2{
+    background: url("../img/firm-banner.jpg")no-repeat;
+    background-size: 100% 100%;
+}
+.banner2-content{
+    width: 1040px;
+    margin: auto;
+    height: 100%;
+}
+.banner2-content p{
+    width: 1040px;
+    font-size: 16px;
+    color: #ffffff;
+    margin: auto;
+    text-align: left;
+    text-indent: 2em;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+.banner2-content a{
+    margin-top: 155px;
+}
+.firm-banner-title {
+    position: absolute;
+    left: 0;
+    top: 120px;
+    width: 100%;
+}
+
+.firm-banner-text h1 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.firm-banner-title h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0;
+    opacity: .6;
+    margin-top: -12px;
+    font-weight: bold;
+}
+
+.firm-banner-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    background: url("../img/firm-banner.jpg")no-repeat;
+    background-size: 100% 101%;
+}
+
+.firm-banner-text div {
+    margin-top: 200px;
+}
+
+.firm-banner-text p {
+    font-size: 16px;
+    color: #ffffff;
+    width: 1040px;
+    margin: auto;
+    text-indent: 2em;
+    margin-bottom: 48px;
+    line-height: 30px;
+}
+
+/*产品*/
+.banner3{
+    height: 100%;
+}
+.banner3-text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    text-align: left;
+}
+
+.banner3-text h4 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.banner3-text h1 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.banner3-text p span {
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.banner3-wd {
+    width: 490px;
+}
+
+/*使用场景*/
+.banner4 .img-list {
+    height: 100%;
+}
+
+.banner4 .img-list img {
+    width: 25%;
+    height: 33.33%;
+}
+
+/*加盟*/
+
+.league-list {
+    width: 1050px;
+    margin: auto;
+}
+
+.league-list a {
+    display: block;
+    width: 305px;
+    height: 190px;
+    background: #212121;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    line-height: 190px;
+}
+
+.league-list a:nth-child(3n+0) {
+    margin-right: 0;
+}
+
+.league-list a:hover {
+    background: #9FD233;
+}
+
+/*新闻*/
+.banner6 {
+    background: url("../img/banner6-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner6-content {
+    width: 1050px;
+    height: 385px;
+    margin: auto;
+}
+
+.banner6-left, .banner6-right {
+    width: 440px;
+    text-align: left;
+}
+
+.banner6 img {
+    width: 440px;
+    height: 248px;
+    border: 1px solid #8F8F8F;
+}
+
+.banner6-left h1, .banner6-right h1 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 30px 0;
+}
+
+.banner6-left p, .banner6-right p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.banner6-pop {
+    background: rgba(159, 210, 51, 0.5) none repeat scroll 0 0 !important;
+    background: #9FD233;
+    filter: Alpha(opacity=50);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0 height : 100 %;
+    line-height: 248px;
+
+}
+
+.banner6-pop img {
+    border: 0;
+    width: 0px;
+    height: 53px;
+}
+
+.banner6-img:hover .banner6-pop {
+    width: 100%;
+}
+
+.banner6-img:hover .banner6-pop img {
+    width: 53px;
+}
+
+/*联系我们*/
+.banner7 {
+    background: url("../img/banner7-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner7-content {
+    width: 990px;
+    margin: auto;
+
+}
+
+.banner7-address {
+
+}
+.banner7 p{
+    margin-bottom: 40px;
+}
+.banner7 .map {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+
+}
+.banner7 .map-pop{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0 !important;
+    background: #000000;
+    filter: Alpha(opacity=50);
+}
+.banner7 .map img {
+    width: 100%;
+    height: 100%;
+}
+.banner7-left p{
+    margin-top: 25px;
+}
+.banner7-left img.icon1 {
+     width: 25px;
+     height: 27px;
+}
+.banner7-left img.icon2 {
+    width: 25px;
+    height: 36px;
+}
+.banner7-left .icon-text1,
+.banner7-left .icon-text2{
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.banner7-left .icon-text1{
+    line-height: 27px;
+}
+.banner7-left .icon-text2{
+    line-height: 36px;
+}
+.banner7-right .code-wd{
+    width:138px;
+    text-align: center;
+}
+.banner7-right .code-wd img{
+    width: 138px;
+    height: 138px;
+}
+.banner7-right .code-wd p{
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+
+}

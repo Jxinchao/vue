@@ -76,6 +76,7 @@ abbr, acronym {
 
 .w100{
     width: 100%;
+    height: 100%;
 }
 .pr{
     position: relative;
@@ -135,4 +136,21 @@ abbr, acronym {
 }
 .mt50{
     margin-top: 50px;
+}
+.mr100{
+    margin-right:100px;
+}
+.banner1,.banner2,.banner4,.banner5,.banner6,.banner7{
+    width: 100%;
+    height: 100%;
+}
+.pop{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0 !important;
+    background: #000000;
+    filter: Alpha(opacity=50);
 }
