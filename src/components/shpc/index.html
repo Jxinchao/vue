@@ -4,26 +4,74 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <link rel="stylesheet" href="lib/css/main.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="lib/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="lib/css/swiper.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="lib/js/jquery-1.11.3.js"></script>
     <script src="lib/js/swiper.min.js"></script>
+    <script src="lib/js/swiper.animate1.0.3.min.js"></script>
     <script src="lib/js/bootstrap.js"></script>
     <script src="js/style.js"></script>
     <script src="js/jquery.fullPage.js"></script>
-
-    <style>
-        .section {
-            text-align: center;
-            font: 50px "Microsoft Yahei";
-            color: #000000;
-        }
-    </style>
+    <script src="js/indexs.js"></script>
 </head>
 <body>
+<!-- 顶部导航 start -->
+<div class="firse_nav">
+    <div class="banner">
+      <div class="shade">
+        <div class="logo"><img src="images/logo.png"/></div>
+        <div class="menu"><img src="images/logo_05.png" /></div>
+      </div>
+    </div>
+
+    <div class="menus">
+      <div class="menus-con">
+        <div class="active">
+          <a href="javascript:;">
+            <img src="images/nav_06.gif" alt="" />
+            <span>首页</span>
+          </a>
+        </div>
+        <div>
+          <a href="javascript:;" >
+            <img src="images/nav_03.gif" alt="" />
+            <span>公司介绍</span>
+          </a>
+        </div>
+        <div>
+          <a href="javascript:;">
+            <img src="images/nav_09.gif" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="javascript:;">
+            <img src="images/nav_14.gif" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="javascript:;">
+            <img src="images/nav_15.gif" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="javascript:;">
+            <img src="images/nav_16.gif" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="javascript:;">
+            <img src="images/nav_20.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- 顶部导航 end -->
 <div id="dowebok">
     <!--首页-->
     <div class="section">
@@ -34,7 +82,7 @@
                         <div class="pop"></div>
                         <img src="img/index-banner1.jpg" class="w100" alt="">
                         <div class="text1 pa">
-                            <div class="text-content">
+                            <div class="text-content ani" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="0.4s">
                                 <span>发现了不起的自己</span>
 
                                 <div>
@@ -52,16 +100,27 @@
 
                             <img class="w100" src="img/index-banner2.jpg" alt="">
 
-                            <div class="index-left-contnt">
-
+                            <div class="index-left-contnt ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+                              <p>发现了不起的自己</p>
+                              <p>你可以不够强大</p>
+                              <p>但绝不能停下脚步</p>
+                              <p>八克白，你的无限原动力</p>
+                              <a href="components/coke.html">可可力量</a>
+                              <img src="images/indexcoke.gif" alt="">
                             </div>
                         </div>
                         <div class="index-right fr">
                             <div class="pop"></div>
 
                             <img class="w100" src="img/index-banner3.jpg" alt="">
-
-                            <div class="index-right-contnt"></div>
+                            <div class="index-right-contnt ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+                              <a href="components/strawberry.html">草莓味道</a>
+                              <p>发现了不起的自己</p>
+                              <p>你不够完美</p>
+                              <p>但绝不能甘于平庸</p>
+                              <p>八克白，你的爱美小心机</p>
+                              <img src="images/caomei.gif" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,18 +128,21 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-
     </div>
+
     <!--关于我们-->
     <div class="section banner2">
         <div class="pop displayTable">
             <div class="banner2-content vetically">
+                <div class="about_title">
+                  <i>about us</i>
+                  <i>关于我们</i>
+                </div>
                 <p>北京爱炼科技有限公司于2017年在北京成立，是一家集研发、生产、销售高端运动营养产品的新兴科技公司。</p>
                 <p>公司两位创始人，都拥有丰富的海外留学经历。他们留学归来，怀揣着梦想和希望聚集在北京，以“全面提升全民体质”为理念，以“追求科学管理、打造完美品质”为核心价值成立了这家公司。并召集数位在运动营养领域颇有建树的专家，组成了研发团队，秉持着“营养、健康、美味、便捷”的品牌理念，创造了一个中国人自己的高蛋白含乳饮品品牌——八克白。旗下产品类别详细，几乎涵盖了所有消费者的喜好与需求。</p>
                 <p>八克白始终坚持采用由国外天然原草，自然放牧孕育出的奶牛产出的高品质原奶，精心甄选出优质牛乳蛋白和其它重要营养元素，通过膜分离技术实现蛋白分子结构的优化重组，打造出更容易被亚洲人体质吸收，更符合亚洲人口味的蛋白质补充饮品。</p>
-                <a href="" class="common-btn">了解更多</a>
+                <a href="components/about.html" class="common-btn">了解更多</a>
             </div>
-
         </div>
     </div>
     <!-- 产品-->
@@ -91,22 +153,18 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide pr">
                         <div class="pop"></div>
-
                         <img src="img/banner3-img1.jpg" class="w100" alt="">
-
                         <div class="banner3-text displayTable">
                             <div class="vetically">
-                                <div class="banner3-wd tc">
-                                    <h4>八克白可可力量</h4>
-
+                                <div class="banner3-wd tc ani"  swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+                                    <h4 class="banner_textleft">八克白可可力量</h4>
                                     <h1>优质蛋白 增肌塑形</h1>
-
                                     <p class="mt30">
-                                        <span>强大科技研发背景    甄选进口高品质原料</span>
-                                        <span>独家配方解密分离乳清蛋白、酪蛋白</span>
-                                        <span>大小分子结合    强力增肌塑形</span>
+                                        <span class="banner_textleft">强大科技研发背景    甄选进口高品质原料</span>
+                                        <span class="banner_textright">独家配方解密分离乳清蛋白、酪蛋白</span>
+                                        <span class="banner_textleft">大小分子结合    强力增肌塑形</span>
                                     </p>
-                                    <a href="" class="common-btn mt50">了解更多</a>
+                                    <a href="components/coke.html" class="common-btn mt50 banner_textright">了解更多</a>
                                 </div>
 
                             </div>
@@ -115,22 +173,20 @@
                     </div>
                     <div class="swiper-slide of">
                         <div class="pop"></div>
-
                         <img src="img/banner3-img2.jpg" class="w100" alt="">
-
                         <div class="banner3-text displayTable">
                             <div class="vetically">
-                                <div class="banner3-wd tc">
-                                    <h4>八克白草莓味道</h4>
+                                <div class="banner3-wd tc ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="2s" swiper-animate-delay="0.4s">
+                                    <h4 class="banner_textleft">八克白草莓味道</h4>
 
-                                    <h1>优质蛋白 减脂塑形</h1>
+                                    <h1 class="banner_textright">优质蛋白 减脂塑形</h1>
 
                                     <p class="mt30">
-                                        <span>强大科技研发背景    甄选进口高品质原料    </span>
-                                        <span>独家配方解密分离乳清蛋白、左旋肉碱</span>
-                                        <span>大小分子结合    减脂纤体塑形</span>
+                                        <span class="banner_textleft">强大科技研发背景    甄选进口高品质原料    </span>
+                                        <span class="banner_textright">独家配方解密分离乳清蛋白、左旋肉碱</span>
+                                        <span class="banner_textleft">大小分子结合    减脂纤体塑形</span>
                                     </p>
-                                    <a href="" class="common-btn mt50">了解更多</a>
+                                    <a href="components/strawberry.html" class="common-btn mt50 banner_textright">了解更多</a>
                                 </div>
 
                             </div>
@@ -145,7 +201,7 @@
     </div>
     <!-- 适用场景-->
     <div class="section">
-        <div class="pop"></div>
+        <div class="pop" style="z-index:1;"></div>
         <div class="banner4">
             <div class="img-list of">
                 <img class="fl" src="img/imgbanner4-img1.jpg" alt="">
@@ -196,11 +252,15 @@
             </a>
         </div>
         <div>
-            <a href="" class="common-btn mt50">加入我们</a>
+            <a href="components/joinus.html" class="common-btn mt50">加入我们</a>
         </div>
     </div>
     <div class="section banner6">
         <div class="banner6-content">
+            <div class="about_title" style="top: -30%;">
+              <i>NEWS</i>
+              <i>新闻动态</i>
+            </div>
             <div class="swiper-container" style="overflow: inherit">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide pr of">
@@ -239,6 +299,10 @@
     </div>
     <div class="section banner7">
         <div class="banner7-content">
+          <div class="about_title" style="top: -200px;">
+            <i>CONTACT us</i>
+            <i>联系我们</i>
+          </div>
             <div class="banner7-address of">
                 <div class="banner7-left fl">
                     <p class="of">
@@ -267,41 +331,14 @@
         </div>
         <div class="map">
             <img src="img/map.jpg" alt=""/>
-
             <div class="map-pop"></div>
         </div>
     </div>
 </div>
+<!-- return top start -->
+<div class="return-top" data-menuanchor="page1">
+  <a href="#page1" style="display:block;"><img src="images/top_03.png" alt="" /></a>
+</div>
+<!-- return top end -->
 </body>
-<script>
-    $(function () {
-        $('#dowebok').fullpage({
-            'navigation': true
-        });
-    });
-    var swiper1 = new Swiper('.banner1 .swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay: 25001111111111
-    });
-    var swiper2 = new Swiper('.banner3 .swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay: 25001111111111
-    });
-    var swiper3 = new Swiper('.banner6 .swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay: 25001111111111
-    });
-    var hg = $(".banner1").height();
-    $(".text1").height(hg);
-    var hg1 = $(".banner3").height();
-    console.log(hg1)
-    $(".banner3-text").height(hg1);
-    var hg1 = $(".banner3").height();
-    console.log(hg1)
-    $(".vetically").height(hg1)
-
-</script>
 </html>

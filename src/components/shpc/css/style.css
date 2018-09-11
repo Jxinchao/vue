@@ -1,4 +1,69 @@
 /*首页*/
+.banner4 img{
+  animation-duration: 1s;
+}
+.firse_nav{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.firse_nav .banner{
+  background: rgba(0,0,0,0);
+  height: 0px;
+}
+.firse_nav .banner .shade{
+  height: 0px;
+  background: rgba(0,0,0,0);
+}
+.return-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    top: inherit !important;
+    margin: 0;
+    bottom: 20px;
+}
+.about_title {
+  animation-duration: 1s;
+  position: relative;
+  top: -12%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 45%;
+  height: 10%;
+}
+.banner7-content{
+  position:relative;
+}
+.about_title i {
+  width: 50%;
+  height: 32px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-style: oblique;
+}
+.about_title i:nth-child(2) {
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+.section {
+    text-align: center;
+    font: 50px "Microsoft Yahei";
+    color: #000000;
+}
 .banner1,
 .swiper-container,
 .firm-banner {
@@ -52,7 +117,11 @@
     margin: auto;
     height: 100%;
 }
+.banner_textleft,.banner_textright,.banner h1{
+   animation-duration: 1s;
+}
 .banner2-content p{
+    animation-duration: 1s;
     width: 1040px;
     font-size: 16px;
     color: #ffffff;

@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		<div class="return-top">
-			<img src="../images/top_03.gif" alt="" />
+			<img src="../images/top_03.png" alt="" />
 		</div>
 		<script src="../js/jquery.min.js"></script>
 		<script>
@@ -17,7 +17,7 @@
 					var scroTop = $(window).scrollTop();
 					//判断当前窗口滚动高度
 					//如果大于100，则显示顶部元素，否则隐藏顶部元素
-					
+
 					if(scroTop>100){
 						$('.return-top').fadeIn(500);
 						$('.return-top img').attr('src','../images/topactive_03.gif');
@@ -26,7 +26,7 @@
 						$('.return-top img').attr('src','../images/top_03.gif');
 					}
 				});
-					    	
+
 				//为返回顶部元素添加点击事件
 				$('.return-top').click(function(){
 					//将当前窗口的内容区滚动高度改为0，即顶部
