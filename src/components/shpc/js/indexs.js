@@ -60,12 +60,14 @@ $(function () {
 			}
 
 		});
-		// $('.banner6').on('mousemove', function(e) {
+		// $('.banner_move').on('mousemove', function(e) {
 		//   var offsetX = e.clientX / window.innerWidth - 0.5,
 		//       offsetY = e.clientY / window.innerHeight - 0.5;
-		//   $('.banner6').css('left', -18 - 40 * offsetX).css('top', 25 - 40 * offsetY);
-		//   $('.banner6').css('left', -18 + 40 * offsetX).css('top', 75 + 40 * offsetY);
+		//   $('.imgcokebanner').css('left', -50 - 10 * offsetX + '%').css('top', 10 - 10 * offsetY + '%');
 		// });
+		// $('.banner_move').on('mouseout', function(e) {
+		// 	$('.imgcokebanner').css('left','-42%').css('top', '16%');
+		// })
 
 });
 $(function(){
@@ -73,7 +75,7 @@ $(function(){
 			pagination: '.swiper-pagination',
 			paginationClickable: true,
 			autoplay: 3000,
-			loop:true,
+			loop:false,
 			onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
 					swiperAnimateCache(swiper); //隐藏动画元素
 					swiperAnimate(swiper); //初始化完成开始动画
@@ -85,8 +87,8 @@ $(function(){
 	var swiper2 = new Swiper('.banner3 .swiper-container', {
 			pagination: '.swiper-pagination',
 			paginationClickable: true,
-			autoplay: 3000,
-			loop:true,
+			autoplay: 9999999999,
+			loop:false,
 			onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
 					swiperAnimateCache(swiper); //隐藏动画元素
 					swiperAnimate(swiper); //初始化完成开始动画

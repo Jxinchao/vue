@@ -150,9 +150,13 @@ abbr, acronym {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0 !important;
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0 !important;
     background: #000000;
     filter: Alpha(opacity=50);
+}
+.banner_move{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    z-index: 10;
 }
 .index-left{
   position: relative;
