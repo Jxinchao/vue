@@ -12,7 +12,7 @@ import footers from '@/components/content';
 export default {
   name: 'App',
   components: {
-    "v-header": header,
+    "v-header": header,  
     "v-footer": footer,
     "v-footers":footers
   },
